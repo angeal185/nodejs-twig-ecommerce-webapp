@@ -1,0 +1,483 @@
+{% extends 'layout.twig' %}
+{% block body %}
+<div class="bh-position-title">
+    <div class="uk-container uk-container-center">
+        <div class="uk-panel">
+            <h1>UIkit Elements</h1></div>
+    </div>
+</div>
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid uk-grid-divider" data-uk-grid-match data-uk-grid-margin>
+            <div class="uk-width-medium-1-5 uk-hidden-small">
+                <div class="uk-panel" data-uk-sticky="{top:80, boundary: true}">
+                    <ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset:80}}">
+                        <li><a href="#elements-panel">Panel</a></li>
+                        <li><a href="#elements-button">Button</a></li>
+                        <li><a href="#elements-form">Form</a></li>
+                        <li><a href="#elements-alert">Alert</a></li>
+                        <li><a href="#elements-progress">Progress</a></li>
+                        <li><a href="#elements-tab">Tab</a></li>
+                        <li><a href="#elements-table">Table</a></li>
+                        <li><a href="#elements-overlay">Overlay</a></li>
+                        <li><a href="#elements-thumbnail">Thumbnail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-width-medium-4-5">
+                <article class="uk-article">
+                    <div class="uk-alert uk-margin-large-bottom">
+                        <p><i class="uk-icon-info-circle"></i> This template uses the <a href="http://getuikit.com/" target="_blank">UIkit Frontend Framework</a>. A powerful set of components and JavaScript scripts. We provide the entire styling of all UIkit components! Below, you can see some examples of UIkit.</p>
+                    </div>
+                    <h2 class="uk-margin-large-top bh-headline-bottom-border" id="elements-panel"><span>Panel</span></h2>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-3">
+                            <div class="uk-panel uk-panel-space">
+                                <h3 class="uk-panel-title">Panel space</h3>
+                                <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. At vero eos et accusam.</p>
+                            </div>
+                            <div class="uk-panel uk-panel-box">
+                                <h3 class="uk-panel-title">Panel box</h3>
+                                <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. At vero eos et accusam.</p>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-3">
+                            <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                                <h3 class="uk-panel-title">Panel box primary</h3>
+                                <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. At vero eos et accusam.</p>
+                            </div>
+                            <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                                <h3 class="uk-panel-title">Panel box secondary</h3>
+                                <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. At vero eos et accusam.</p>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-3">
+                            <div class="uk-panel uk-panel-box">
+                                <div class="uk-panel-teaser"><img src=" /images/demo.jpg" width="400" height="200" alt="Placeholder"></div>
+                                <h3 class="uk-panel-title">Panel box teaser</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                            <div class="uk-panel uk-panel-header">
+                                <h3 class="uk-panel-title">Panel Header</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="bh-headline-bottom-border" id="elements-button"><span>Button</span></h2>
+                    <div class="uk-grid" data-uk-grid-margin data-uk-grid-match>
+                        <div class="uk-width-1-1" data-uk-margin><a class="uk-button" href="">Link</a>
+                            <button class="uk-button" type="button">Button</button>
+                            <button class="uk-button uk-button-primary" type="button">Primary</button>
+                            <button class="uk-button uk-button-success" type="button">Success</button>
+                            <button class="uk-button uk-button-danger" type="button">Danger</button>
+                            <button class="uk-button" type="button" disabled="disabled">Disabled</button>
+                        </div>
+                    </div>
+                    <div class="uk-grid" data-uk-grid-margin data-uk-grid-match>
+                        <div class="uk-width-medium-3-5" data-uk-margin>
+                            <h2 class="uk-h4">Button icons</h2>
+                            <button class="uk-button" type="button"><i class="uk-icon-home"></i> Button</button>
+                            <button class="uk-button uk-button-primary" type="button"><i class="uk-icon-shopping-cart"></i> Primary</button>
+                            <button class="uk-button uk-button-success" type="button"><i class="uk-icon-info-circle"></i> Success</button>
+                            <button class="uk-button uk-button-danger" type="button"><i class="uk-icon-heart"></i> Danger</button>
+                        </div>
+                        <div class="uk-width-medium-2-5">
+                            <h2 class="uk-h4">Button Sizes</h2>
+                            <button class="uk-button uk-button-large" type="button">Large</button>
+                            <button class="uk-button" type="button">Default</button>
+                            <button class="uk-button uk-button-small" type="button">Small</button>
+                        </div>
+                        <div class="uk-width-medium-1-3">
+                            <h2 class="uk-h4">Button Group</h2>
+                            <div class="uk-button-group">
+                                <button class="uk-button">Button</button>
+                                <button class="uk-button">Button</button>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-3" data-uk-margin>
+                            <h2 class="uk-h4">Button Dropdown</h2>
+                            <div class="uk-button-dropdown" data-uk-dropdown>
+                                <button class="uk-button">Hover <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown uk-dropdown-small">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="">Option 1</a></li>
+                                        <li><a href="">Option 2</a></li>
+                                        <li><a href="">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                                <button class="uk-button">Click <i class="uk-icon-caret-down"></i></button>
+                                <div class="uk-dropdown uk-dropdown-small">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a href="">Option 1</a></li>
+                                        <li><a href="">Option 2</a></li>
+                                        <li><a href="">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="uk-margin-large-top bh-headline-bottom-border" id="elements-form"><span>Form</span></h2>
+                    <form class="uk-form">
+                        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                            <div class="uk-width-1-2 uk-width-medium-1-6">
+                                <input type="text" placeholder="Text" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-6">
+                                <input type="text" placeholder="Success" class="uk-form-success uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-6">
+                                <input type="text" placeholder="Danger" class="uk-form-danger uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-6">
+                                <input type="text" placeholder="Disabled" class="uk-form-large uk-width-1-1" disabled="disabled">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-6">
+                                <div class="uk-form-icon uk-width-1-1"><i class="uk-icon-calendar"></i>
+                                    <input type="text" placeholder="Icon" class="uk-form-large uk-width-1-1">
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-6">
+                                <input type="text" placeholder="Blank" class="uk-form-blank uk-form-large uk-width-1-1">
+                            </div>
+                        </div>
+                        <h2 class="uk-h4">Form Sizes</h2>
+                        <input type="text" placeholder="Large" class="uk-form-large">
+                        <input type="text" placeholder="Default" class="uk-margin-small-top">
+                        <input type="text" placeholder="Small" class="uk-form-small uk-margin-small-top">
+                        <h2 class="uk-h4">Form Grid</h2>
+                        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                            <div class="uk-width-1-1">
+                                <input type="text" placeholder="1/1" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2">
+                                <input type="text" placeholder="1/2" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2">
+                                <input type="text" placeholder="1/2" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3">
+                                <input type="text" placeholder="1/3" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3">
+                                <input type="text" placeholder="1/3" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3">
+                                <input type="text" placeholder="1/3" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-4">
+                                <input type="text" placeholder="1/4" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-4">
+                                <input type="text" placeholder="1/4" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-4">
+                                <input type="text" placeholder="1/4" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-4">
+                                <input type="text" placeholder="1/4" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-5">
+                                <input type="text" placeholder="1/5" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-5">
+                                <input type="text" placeholder="1/5" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-5">
+                                <input type="text" placeholder="1/5" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5">
+                                <input type="text" placeholder="1/5" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5">
+                                <input type="text" placeholder="1/5" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-6">
+                                <input type="text" placeholder="1/6" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-6">
+                                <input type="text" placeholder="1/6" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-6">
+                                <input type="text" placeholder="1/6" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-6">
+                                <input type="text" placeholder="1/6" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-6">
+                                <input type="text" placeholder="1/6" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-3 uk-width-medium-1-6">
+                                <input type="text" placeholder="1/6" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                            <div class="uk-width-1-2 uk-width-medium-1-5 uk-width-large-1-10">
+                                <input type="text" placeholder="1/10" class="uk-form-large uk-width-1-1">
+                            </div>
+                        </div>
+                    </form>
+                    <h2 class="uk-margin-large-top bh-headline-bottom-border" id="elements-alert"><span>Alert</span></h2>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-small-1-2">
+                            <div class="uk-alert">
+                                <a href="" class="uk-alert-close uk-close"></a>
+                                <p>This is an info message.</p>
+                            </div>
+                            <div class="uk-alert uk-alert-warning">
+                                <a href="" class="uk-alert-close uk-close"></a>
+                                <p>This is a warning message.</p>
+                            </div>
+                        </div>
+                        <div class="uk-width-small-1-2">
+                            <div class="uk-alert uk-alert-success">
+                                <a href="" class="uk-alert-close uk-close"></a>
+                                <p>This is a success message.</p>
+                            </div>
+                            <div class="uk-alert uk-alert-danger">
+                                <a href="" class="uk-alert-close uk-close"></a>
+                                <p>This is a danger message.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="uk-margin-large-top bh-headline-bottom-border" id="elements-progress"><span>Progress</span></h2>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-3">
+                            <h2 class="uk-h4">Colors</h2>
+                            <div class="uk-progress">
+                                <div class="uk-progress-bar bh-width-20">20%</div>
+                            </div>
+                            <div class="uk-progress uk-progress-success">
+                                <div class="uk-progress-bar bh-width-40">40%</div>
+                            </div>
+                            <div class="uk-progress uk-progress-warning">
+                                <div class="uk-progress-bar bh-width-60">60%</div>
+                            </div>
+                            <div class="uk-progress uk-progress-danger">
+                                <div class="uk-progress-bar bh-width-80">80%</div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-3">
+                            <h2 class="uk-h4">Progress Striped</h2>
+                            <div class="uk-progress uk-progress-striped">
+                                <div class="uk-progress-bar bh-width-20">20%</div>
+                            </div>
+                            <div class="uk-progress uk-progress-striped uk-progress-success">
+                                <div class="uk-progress-bar bh-width-40">40%</div>
+                            </div>
+                            <div class="uk-progress uk-progress-striped uk-active uk-progress-warning">
+                                <div class="uk-progress-bar bh-width-60">60%</div>
+                            </div>
+                            <div class="uk-progress uk-progress-striped uk-active uk-progress-danger">
+                                <div class="uk-progress-bar bh-width-80">80%</div>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-3">
+                            <h2 class="uk-h4">Progress Sizes</h2>
+                            <div class="uk-progress uk-progress-mini">
+                                <div class="uk-progress-bar bh-width-20"></div>
+                            </div>
+                            <div class="uk-progress uk-progress-small">
+                                <div class="uk-progress-bar bh-width-40"></div>
+                            </div>
+                            <div class="uk-progress">
+                                <div class="uk-progress-bar bh-width-60"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="uk-margin-large-top bh-headline-bottom-border" id="elements-tab"><span>Tab</span></h2>
+                    <h2 class="uk-h4">Standard and Flip Tab</h2>
+                    <ul class="uk-tab" data-uk-tab>
+                        <li class="uk-active"><a href="">Tab One</a></li>
+                        <li><a href="">Tab Two</a></li>
+                        <li class="uk-disabled"><a href="">Tab disabled</a></li>
+                    </ul>
+                    <ul class="uk-tab uk-tab-flip uk-margin" data-uk-tab>
+                        <li class="uk-active"><a href="">Tab One</a></li>
+                        <li><a href="">Tab Two</a></li>
+                        <li><a href="">Tab Three</a></li>
+                    </ul>
+                    <h2 class="uk-h4">Center and Bottom Tab</h2>
+                    <div class="uk-tab-center">
+                        <ul class="uk-tab uk-tab-center" data-uk-tab>
+                            <li class="uk-active"><a href="">Tab One</a></li>
+                            <li><a href="">Tab Two</a></li>
+                            <li><a href="">Tab Three</a></li>
+                        </ul>
+                    </div>
+                    <ul class="uk-tab uk-tab-bottom uk-margin" data-uk-tab>
+                        <li class="uk-active"><a href="">Tab One</a></li>
+                        <li><a href="">Tab Two</a></li>
+                        <li><a href="">Tab Three</a></li>
+                    </ul>
+                    <h2 class="uk-h4">Left and Right Tab</h2>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-2">
+                            <ul class="uk-tab uk-tab-left" data-uk-tab>
+                                <li class="uk-active"><a href="">Tab One</a></li>
+                                <li><a href="">Tab Two</a></li>
+                                <li><a href="">Tab Three</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-medium-1-2">
+                            <ul class="uk-tab uk-tab-right" data-uk-tab>
+                                <li class="uk-active"><a href="">Tab One</a></li>
+                                <li><a href="">Tab Two</a></li>
+                                <li><a href="">Tab Three</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="uk-margin-large-top bh-headline-bottom-border" id="elements-table"><span>Table</span></h2>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-2">
+                            <table class="uk-table uk-table-hover">
+                                <caption>Hover Table</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Heading</th>
+                                        <th>Heading</th>
+                                        <th>Heading</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td>Footer</td>
+                                        <td>Footer</td>
+                                        <td>Footer</td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="uk-width-medium-1-2">
+                            <table class="uk-table uk-table-striped">
+                                <caption>Striped Table</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Heading</th>
+                                        <th>Heading</th>
+                                        <th>Heading</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td>Footer</td>
+                                        <td>Footer</td>
+                                        <td>Footer</td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                        <td>Cell Content</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2 class="uk-margin-large-top bh-headline-bottom-border" id="elements-overlay"><span>Overlay</span></h2>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-1-1">
+                            <p>This is how the default overlay component looks like. There are a lot more options you can combine. Check out <a href="http://getuikit.com/docs/overlay.html" target="_blank">UIkit Overlay</a>.</p>
+                            <div class="uk-grid" data-uk-grid-margin>
+                                <div class="uk-width-small-1-3">
+                                    <figure class="uk-overlay uk-overlay-hover"><img src=" /images/demo.jpg" width="600" height="400" alt="Placeholder">
+                                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-icon uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center"></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="uk-width-small-1-3">
+                                    <figure class="uk-overlay uk-overlay-hover"><img src=" /images/demo.jpg" width="600" height="400" alt="Placeholder">
+                                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                                            <div>
+                                                <p class="uk-margin-small">Lorem ipsum dolor sit amet.</p>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="uk-margin-large-top bh-headline-bottom-border" id="elements-thumbnail"><span>Thumbnail</span></h2>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-small-1-3">
+                            <h2 class="uk-h4">Thumbnail anchor</h2>
+                            <a class="uk-thumbnail" href=""><img src=" /images/demo.jpg" width="400" height="300" alt="Placeholder"></a>
+                        </div>
+                        <div class="uk-width-small-1-3">
+                            <h2 class="uk-h4">Thumbnail with overlay</h2>
+                            <a class="uk-thumbnail uk-overlay-toggle" href="">
+                                <figure class="uk-overlay uk-overlay-hover"><img src=" /images/demo.jpg" width="600" height="400" alt="Placeholder">
+                                    <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom uk-flex uk-flex-center uk-flex-middle uk-text-center">
+                                        <div>
+                                            <p class="uk-margin-small">Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="uk-width-small-1-3">
+                            <h2 class="uk-h4">Thumbnail Caption</h2>
+                            <a class="uk-thumbnail" href=""><img src=" /images/demo.jpg" width="400" height="300" alt="Placeholder">
+                                <div class="uk-thumbnail-caption">Thumbnail Caption</div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

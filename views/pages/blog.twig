@@ -1,0 +1,20 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default bh-isblog">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-3-4">
+                {% include 'includes/forms/breadcrumb.twig' %}
+                {% include 'includes/blog/blog-article.twig' %}
+                {% include 'includes/blog/blog-article.twig' %}
+                {% include 'includes/blog/blog-article.twig' %}
+                {% include 'includes/blog/blog-article.twig' %}
+                {% include 'includes/blog/blog-article.twig' %}
+                {% include 'includes/forms/pagination.twig' %}
+            </div>
+            {% include 'includes/blog/sidebar.twig' %}
+        </div>
+    </div>
+</div>
+{% endblock %}

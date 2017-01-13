@@ -1,0 +1,33 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        {% include 'includes/forms/breadcrumb.twig' %}
+        <article class="uk-article">
+            <div class="uk-grid" data-uk-grid-margin>
+              {% include 'includes/forms/login-alert.twig' %}
+              {% include 'includes/forms/coupon-alert.twig' %}
+              {% include 'includes/forms/billing-address.twig' %}
+              {% include 'includes/forms/shipping-address.twig' %}
+            </div>
+            {% include 'includes/checkout/order.twig' %}
+            <div class="uk-grid uk-margin-large-top">
+                <div class="uk-width-1-1">
+                    <h2 class="bh-headline-bottom-border"><span>Select payment method</span></h2>
+                    {% include 'includes/checkout/checkbox.twig' %}
+                    <hr>
+                    {% include 'includes/checkout/checkbox.twig' %}
+                    <hr>
+                    {% include 'includes/checkout/checkbox.twig' %}
+                </div>
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <button class="uk-button uk-button-primary">Place order</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+{% endblock %}

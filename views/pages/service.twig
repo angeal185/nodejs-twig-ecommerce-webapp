@@ -1,0 +1,22 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <article class="uk-article">
+            <div class="uk-grid" data-uk-grid-margin data-uk-grid-match="{target:'> div > .uk-panel'}">
+                {% include 'includes/service/icon-panel.twig' %}
+                {% include 'includes/service/icon-panel.twig' %}
+                {% include 'includes/service/icon-panel.twig' %}
+                {% include 'includes/service/icon-panel.twig' %}
+                {% include 'includes/service/icon-panel.twig' %}
+                {% include 'includes/service/icon-panel.twig' %}
+            </div>
+            {% include 'includes/service/img-info-block.twig' %}
+            {% include 'includes/service/img-info-block.twig' %}
+        </article>
+    </div>
+</div>
+{% include 'includes/service/purchase-callout-block.twig' %}
+{% include 'includes/service/counter-block.twig' %}
+{% endblock %}

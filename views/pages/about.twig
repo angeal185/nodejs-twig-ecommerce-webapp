@@ -1,0 +1,23 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <article class="uk-article">
+            <p class="bh-article-columns uk-text-justify"><span class="bh-dropcap">Z</span>ombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
+            <div class="uk-grid uk-margin-top" data-uk-grid-margin data-uk-grid-match="{target:'> div > .uk-panel'}">
+              {% include 'includes/about/info-card.twig' %}
+              {% include 'includes/about/info-card.twig' %}
+              {% include 'includes/about/info-card.twig' %}
+            </div>
+            <div class="uk-grid uk-margin-top" data-uk-grid-margin data-uk-grid-match="{target:'> div > .uk-panel'}">
+                {% include 'includes/about/facts-half.twig' %}
+                {% include 'includes/about/progress-bar-3.twig' %}
+            </div>
+            {% include 'includes/about/img-grid.twig' %}
+        </article>
+    </div>
+</div>
+{% include 'includes/about/info-callout-block.twig' %}
+{% include 'includes/about/our-clients-block.twig' %}
+{% endblock %}

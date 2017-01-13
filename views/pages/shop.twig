@@ -1,0 +1,26 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-margin data-uk-grid-match>
+            <div class="uk-width-medium-3-4">
+                {% include 'includes/forms/breadcrumb.twig' %}
+                <article class="uk-article">
+                    <div class="uk-grid" data-uk-grid-margin>
+                        {% include 'includes/shop/sort.twig' %}
+                        {% include 'includes/shop/on-sale-item.twig' %}
+                        {% include 'includes/shop/on-sale-item.twig' %}
+                        {% include 'includes/shop/on-sale-item.twig' %}
+                        {% include 'includes/shop/on-sale-item.twig' %}
+                        {% include 'includes/shop/on-sale-item.twig' %}
+                        {% include 'includes/shop/on-sale-item.twig' %}
+                    </div>
+                    {% include 'includes/forms/pagination.twig' %}
+                </article>
+            </div>
+            {% include 'includes/shop/right-sidebar.twig' %}
+        </div>
+    </div>
+</div>
+{% endblock %}

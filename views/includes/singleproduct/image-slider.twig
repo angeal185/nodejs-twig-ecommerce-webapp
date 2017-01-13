@@ -1,0 +1,21 @@
+<div class="uk-width-medium-1-2">
+    <div data-uk-slideshow="{animation: 'scroll', duration: 700}">
+        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+            <div class="uk-width-1-1">
+                <div class="uk-slidenav-position">
+                    <ul class="uk-slideshow">
+                      {% include 'includes/singleproduct/image-overlay.twig' %}
+                      {% include 'includes/singleproduct/image-overlay.twig' %}
+                      {% include 'includes/singleproduct/image-overlay.twig' %}
+                      {% include 'includes/singleproduct/image-overlay.twig' %}
+                    </ul>
+                    <a data-uk-slideshow-item="previous" href="#" class="uk-slidenav uk-slidenav-previous"></a>
+                    <a data-uk-slideshow-item="next" href="#" class="uk-slidenav uk-slidenav-next"></a>
+                </div>
+            </div>
+            {% include 'includes/singleproduct/image-overlay-default.twig' %}
+            {% include 'includes/singleproduct/image-overlay-default.twig' %}
+            {% include 'includes/singleproduct/image-overlay-default.twig' %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <article class="uk-article">
+            <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
+              {% include 'includes/typography/headers.twig' %}
+              {% include 'includes/typography/text.twig' %}
+              {% include 'includes/typography/text-color.twig' %}
+            </div>
+            <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
+                <div class="uk-width-1-1">
+                  {% include 'includes/typography/text-left.twig' %}
+                  {% include 'includes/typography/text-right.twig' %}
+                  {% include 'includes/typography/text-center.twig' %}
+                  {% include 'includes/typography/text-center-small.twig' %}
+                  {% include 'includes/typography/text-center-med.twig' %}
+                  {% include 'includes/typography/text-justify.twig' %}
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+{% endblock %}

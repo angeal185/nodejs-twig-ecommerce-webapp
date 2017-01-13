@@ -1,0 +1,31 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default bh-isblog">
+    <div class="uk-container uk-container-center">
+        {% include 'includes/forms/breadcrumb.twig' %}
+        <article class="uk-article">
+            {% include 'includes/blog-singlepost/blog-single-post.twig' %}
+            {% include 'includes/blog-singlepost/blog-meta.twig' %}
+            {% include 'includes/blog-singlepost/blog-user-panel.twig' %}
+            <h2 id="blog-single-comments">Comments</h2>
+            <ul class="uk-comment-list">
+                <li>
+                    {% include 'includes/blog-singlepost/blog-comment-default.twig' %}
+                    {% include 'includes/blog-singlepost/blog-comment-sub.twig' %}
+                </li>
+                <li>
+                  {% include 'includes/blog-singlepost/blog-comment-default.twig' %}
+                  {% include 'includes/blog-singlepost/blog-comment-sub.twig' %}
+                </li>
+                <li>
+                  {% include 'includes/blog-singlepost/blog-comment-default.twig' %}
+                  {% include 'includes/blog-singlepost/blog-comment-sub.twig' %}
+                </li>
+            </ul>
+            <h3>Write a comment</h3>
+            {% include 'includes/forms/comment.twig' %}
+        </article>
+    </div>
+</div>
+{% endblock %}

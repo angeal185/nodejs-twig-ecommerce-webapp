@@ -1,0 +1,15 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+{% include 'includes/team/staff.twig' %}
+{% include 'includes/team/info-callout.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <div class="uk-panel">
+            {% include 'includes/team/description-panel.twig' %}
+            <hr class="uk-grid-divider">
+            {% include 'includes/team/description-panel.twig' %}
+        </div>
+    </div>
+</div>
+{% endblock %}

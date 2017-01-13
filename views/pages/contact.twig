@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+{% block body %}
+<div class="bh-position bh-position-primary bh-position-full bh-position-padding-remove">
+    <div id="pages-contact-map"></div>
+</div>
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <article class="uk-article">
+            <div class="uk-grid" data-uk-grid-margin>
+                {% include 'includes/forms/contact-form.twig' %}
+                {% include 'includes/contact/contact-panel.twig' %}
+            </div>
+        </article>
+    </div>
+</div>
+{% endblock %}

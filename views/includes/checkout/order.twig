@@ -1,0 +1,18 @@
+<div class="uk-grid uk-margin-large-top" data-uk-grid-margin>
+    <div class="uk-width-1-1">
+        <h2 class="bh-headline-bottom-border"><span>Your order</span></h2>
+        <div class="uk-overflow-container">
+            <table class="uk-table uk-table-middle uk-text-nowrap">
+                {% include 'includes/wishlist/wishlist-header.twig' %}
+                <tbody>
+                  {% include 'includes/wishlist/wishlist-item.twig' %}
+                  {% include 'includes/wishlist/wishlist-item.twig' %}
+                  {% include 'includes/wishlist/wishlist-item.twig' %}
+                  {% include 'includes/wishlist/wishlist-item.twig' %}
+                  {% include 'includes/wishlist/wishlist-item.twig' %}
+                </tbody>
+            </table>
+            {% include 'includes/checkout/total.twig' %}
+        </div>
+    </div>
+</div>

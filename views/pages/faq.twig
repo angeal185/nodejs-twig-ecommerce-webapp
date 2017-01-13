@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid uk-grid-divider" data-uk-grid-match data-uk-grid-margin>
+          {% include 'includes/faq/sidebar.twig' %}
+            <div class="uk-width-medium-3-4">
+                <article class="uk-article">
+                  {% include 'includes/faq/general.twig' %}
+                  {% include 'includes/faq/about.twig' %}
+                  {% include 'includes/faq/layout.twig' %}
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'includes/faq/contact-block.twig' %}
+{% endblock %}

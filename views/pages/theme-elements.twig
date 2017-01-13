@@ -1,0 +1,27 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid uk-grid-divider" data-uk-grid-match data-uk-grid-margin>
+            {% include 'includes/theme-elements/sidebar.twig' %}
+            <div class="uk-width-medium-4-5">
+                <article class="uk-article">
+                    <div class="uk-alert">
+                        <p>Here you can find all custom created theme components and modifier extending the <a href="http://getuikit.com/" target="_blank">UIkit Frontend Framework</a>.</p>
+                    </div>
+                    {% include 'includes/theme-elements/button-secondary.twig' %}
+                    {% include 'includes/theme-elements/button-code.twig' %}
+                    {% include 'includes/theme-elements/tags.twig' %}
+                    {% include 'includes/theme-elements/icon-large.twig' %}
+                    {% include 'includes/theme-elements/icon-code.twig' %}
+                    {% include 'includes/theme-elements/counter.twig' %}
+                    {% include 'includes/theme-elements/pricing.twig' %}
+                    {% include 'includes/theme-elements/overlay.twig' %}
+                    {% include 'includes/theme-elements/article.twig' %}
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

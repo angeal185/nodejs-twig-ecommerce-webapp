@@ -1,0 +1,33 @@
+{% extends 'layout.twig' %}
+{% block body %}
+{% include 'includes/general/title-bar.twig' %}
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+        {% include 'includes/forms/breadcrumb.twig' %}
+        <article class="uk-article">
+            <div class="uk-overflow-container">
+                <table class="uk-table uk-table-middle uk-text-nowrap">
+                  {% include 'includes/wishlist/wishlist-header.twig' %}
+                    <tbody>
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        {% include 'includes/wishlist/wishlist-item.twig' %}
+                        <tr>
+                            <td colspan="6">
+                                <form class="uk-form"><span class="uk-float-right"><a href="/checkout" class="uk-button uk-button-primary">Add all to cart</a></span></form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </div>
+</div>
+{% endblock %}
